@@ -28,7 +28,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 9rem 6% 2rem;
+    padding: 6rem 6% 2rem;
 }
 
 /*✧✧✧✧✧✧✧✧✧ MENU ✧✧✧✧✧✧✧✧✧*/
@@ -140,7 +140,6 @@ section {
 }
 
 /*✧✧✧✧✧✧✧✧✧ About Me ✧✧✧✧✧✧✧✧✧*/
-
 .about-title {
     position: relative;
     top: -114px;
@@ -157,18 +156,196 @@ section {
     z-index: 12;
 }
 
+.about-h1 {
+    position: relative;
+    margin-bottom: 21px;
+    font-size: 5rem;
+    right: -359px;
+    margin: 19px 360px;
+    font-family: var(--font-title);
+    color: var(--primary-color);
+}
 
+.about-p {
+    position: relative;
+    right: -359px;
+    font-size: 1.2rem;
+    margin: 19px 360px;
+    font-family: var(--font-text);
+    color: var(--color-text);
+}
 
-/*✧✧✧✧✧✧✧✧✧ TABS ✧✧✧✧✧✧✧✧✧*/
+.img-wrapper img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*border-radius: 277px;*/
+}
+
+.about-icon {
+    width: 260px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-icon::before,
+.about-icon::after {
+    content: '✦';
+    position: absolute;
+    color: #fff;
+    font-size: 1.4rem;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.about-icon::before {
+    top: 8px;
+    left: 12px;
+}
+
+.about-icon::after {
+    bottom: 10px;
+    right: 14px;
+}
+
 .tabs {
     position: relative;
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid #444;
+    border-bottom: 2px solid var(--cor3);
     margin-bottom: 20px;
-    margin-top: -162px;
+    margin-top: -321px;
 }
 
+.tab-button {
+    padding: 3px 29px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 26px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    font-family: var(--font-title);
+}
+
+.tab-button:hover {
+    color: var(--primary-color);
+}
+
+.tab-button.active {
+    border-bottom: 3px solid var(--primary-color);
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    animation: fade 0.3s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/*✧✧✧✧✧✧✧✧✧ About Me ✧✧✧✧✧✧✧✧✧*/
+.about-title {
+    position: relative;
+    top: -114px;
+    font-size: 9rem;
+    text-align: center;
+    margin: 16rem;
+    font-weight: 700;
+    font-family: var(--font-title);
+    color: var(--cor5);
+    text-shadow:
+        0 0 16px rgb(149, 198, 255),
+        0 0 8px rgb(167, 191, 252);
+    letter-spacing: 1.2rem;
+    z-index: 12;
+}
+
+.about-h1 {
+    position: relative;
+    margin-bottom: 21px;
+    font-size: 5rem;
+    right: -359px;
+    margin: 19px 360px;
+    font-family: var(--font-title);
+    color: var(--primary-color);
+}
+
+.about-p {
+    position: relative;
+    right: -359px;
+    font-size: 1.2rem;
+    margin: 19px 360px;
+    font-family: var(--font-text);
+    color: var(--color-text);
+}
+
+.img-about {
+    position: relative;
+    float: left;
+    top: -273px;
+    width: 297px;
+    height: 290px;
+    border-radius: 277px;
+}
+
+.about-icon {
+    width: 288px;
+    height: 230px;
+    top: -246px;
+    left: -288px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-icon::before,
+.about-icon::after {
+    content: '✦';
+    position: absolute;
+    color: #fff;
+    font-size: 1.4rem;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.about-icon::before {
+    top: 8px;
+    left: 12px;
+}
+
+.about-icon::after {
+    bottom: 10px;
+    right: 14px;
+}
+
+.about-content {
+    position: relative;
+    top: 95px;
+}
+
+/* Tabs */
+.tabs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--cor3);
+    margin-bottom: 20px;
+    margin-top: -321px;
+}
 
 .tab-button {
     padding: 3px 29px;
@@ -213,6 +390,88 @@ section {
 }
 
 
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*✧✧✧✧✧✧✧✧✧ FORMATION ✧✧✧✧✧✧✧✧✧*/
+.formation-content {
+    position: relative;
+    top: 95px;
+    margin: 46px 27px;
+}
+
+.formation-content h1 {
+    font-size: 3rem;
+    text-align: left;
+    margin: 5px 0;
+    font-family: var(--font-title);
+    color: var(--primary-color);
+}
+
+.formation-content h2 {
+    position: relative;
+    right: -633px;
+    font-size: 26px;
+    margin: 5px 0;
+    font-family: var(--font-title);
+    color: var(--cor2);
+}
+
+.formation-content p {
+    position: relative;
+    left: -359px;
+    font-size: 1.2rem;
+    margin: 19px 360px;
+    font-family: var(--font-text);
+    color: var(--color-text);
+}
+
+
+/*✧✧✧✧✧✧✧✧✧ TOOLS ✧✧✧✧✧✧✧✧✧*/
+.content-tool {
+    position: relative;
+    top: -6px;
+    left: 1px;
+    max-width: 600px;
+}
+
+.tools-list h3 {
+    font-size: 5rem;
+    font-family: var(--font-title);
+    margin: 51px 0;
+}
+
+.tools-list p {
+    font-size: 1.2rem;
+    font-family: var(--font-text);
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 617px;
+    margin-top: -13px;
+}
+
+.tool_img {
+    position: relative;
+    display: flex;
+    top: 1rem;
+    float: left;
+    width: 184px;
+    height: 184px;
+    justify-content: space-between;
+
+}
+
+
+
 /*✧✧✧✧✧✧✧✧✧ PROJECTS ✧✧✧✧✧✧✧✧✧*/
 .project-title {
     position: relative;
@@ -240,37 +499,43 @@ hr {
     margin: auto;
 }
 
+/*texts*/
 .project-h1 {
     font-size: 3rem;
+    text-align: left;
     margin: 5px 0;
     font-family: var(--font-title);
     color: var(--primary-color);
 }
 
 .project-text {
+    position: relative;
+    left: -359px;
     font-size: 1.2rem;
-    margin: 10px 0;
+    margin: 19px 360px;
     font-family: var(--font-text);
     color: var(--color-text);
 }
 
 
 .project-h2 {
+    text-align: left;
     font-size: 2rem;
     margin: 5px 0;
-    font-family: var(--font-text);
+    font-family: var(--font-title);
     color: var(--cor2);
 }
 
-.project-img {
-    width: 100%;
+.project-img img {
+    float: right;
+    width: 35%;
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: -562px;
 }
 
 li {
     font-size: 1.2rem;
-    margin: 10px 0;
+    margin: 9px 22px;
     color: var(--color-text);
     font-family: var(--font-text);
 }
@@ -313,23 +578,6 @@ li {
     z-index: 10;
 }
 
-@keyframes showContent {
-    to {
-        transform: translateY(0);
-        filter: blur(0);
-        opacity: 1;
-    }
-}
-
-.slider .list .item.active p:nth-child(1),
-.slider .list .item.active h1,
-.slider .list .item.active p:nth-child(3) {
-    transform: translateY(30px);
-    filter: blur(20px);
-    opacity: 0;
-    animation: showContent .5s .7s ease-in-out 1 forwards;
-}
-
 .slider .list .item.active h1 {
     animation-delay: 1s;
 }
@@ -340,8 +588,8 @@ li {
 
 .arrows {
     position: absolute;
-    top: 30%;
-    right: 50px;
+    top: 65%;
+    right: 166px;
     z-index: 100;
 }
 
@@ -357,11 +605,6 @@ li {
     transition: .5s;
 }
 
-.arrows button:hover {
-    background-color: var(--primary-color);
-    color: black;
-}
-
 
 /*✧✧✧✧✧✧✧✧✧ CONTACTS ✧✧✧✧✧✧✧✧✧*/
 .contact-title {
@@ -369,7 +612,7 @@ li {
     top: -114px;
     font-size: 9rem;
     text-align: center;
-    margin: 16rem;
+    margin: 16rem 0 0 0;
     font-weight: 700;
     font-family: var(--font-title);
     color: var(--cor5);
@@ -380,58 +623,103 @@ li {
     z-index: 12;
 }
 
-
-.contact-section {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.contact-section h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.contact-section p {
-    font-size: 1.1em;
-    color: #666;
-    margin-bottom: 30px;
-}
-
 .contact-info {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
+    margin-top: -10px;
+    padding: 0 20px;
 }
 
-.contact-card {
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 463px;
-    padding: 26px;
-    top: 72px;
-    position: relative;
-    transition: transform 0.3s ease;
-}
-
-.contact-card:hover {
-    transform: translateY(-5px);
-}
-
-.contact-card a {
-    font-family: var(--font-text);
-    color: var(--cor1);
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
-    font-size: 23px;
+    width: 428px;
+    transition: all 0.3s ease;
 }
 
-.contact-card a:hover {
-    text-decoration: underline;
+.contact-item:hover {
+    transform: translateY(-8px);
+}
+
+.icon-wrapper {
+    width: 110px;
+    height: 110px;
+    background: rgba(20, 60, 140, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 50%;
+    border: 1px solid rgba(100, 180, 255, 0.35);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        inset 0 0 10px rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-wrapper::before,
+.icon-wrapper::after {
+    content: '✦';
+    position: absolute;
+    color: #fff;
+    font-size: 1.4rem;
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.icon-wrapper::before {
+    top: 8px;
+    left: 12px;
+}
+
+.icon-wrapper::after {
+    bottom: 10px;
+    right: 14px;
+}
+
+.contact-icon {
+    position: relative;
+    width: 70px;
+    height: 107px;
+    left: -1px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.contact-item span {
+    font-family: var(--font-text);
+    color: var(--cor2);
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    background: rgba(0, 42, 110, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 14px 32px;
+    border-radius: 50px;
+    border: 1px solid rgba(100, 180, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: block;
+}
+
+.icon-wrapper.email {
+    background: rgba(30, 80, 180, 0.45);
+}
+
+.icon-wrapper.github {
+    background: rgba(40, 40, 40, 0.5);
+}
+
+.icon-wrapper.linkedin {
+    background: rgba(0, 110, 180, 0.45);
 }
 
 
@@ -453,12 +741,12 @@ li {
 .footer {
     color: white;
     position: relative;
-    top: 66px;
-    left: 610px;
+    top: 67px;
+    left: 751px;
     width: 100%;
     z-index: 98;
     font-family: var(--font-text);
-    font-size: 19px;
+    font-size: 22px;
 }
 
 #year {
