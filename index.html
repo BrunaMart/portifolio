@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,24 +9,304 @@
     <link rel="stylesheet" href="/css/stars.css">
     <link rel="icon"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚀</text></svg>">
-</head>
-<body>
 
+</head>
+
+<body>
     <!--✧✧✧✧✧✧✧✧✧ BACKGROUND STARS ✧✧✧✧✧✧✧✧✧-->
     <section class="wrapper">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-    <div class="shooting-star"></div>
-    <div class="shooting-star"></div>
-    <div class="shooting-star"></div>
-    <div class="shooting-star"></div>
-    <div class="shooting-star"></div>
-</section>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star"></div>
+    </section>
 
-<section class="home" id="home"></section>
+    <!--✧✧✧✧✧✧✧✧✧ MENU ✧✧✧✧✧✧✧✧✧-->
+    <div class="sidebar">
+
+        <div class="lines">
+            <div class="line active"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line short"></div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#cover">Index</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!--✧✧✧✧✧✧✧✧✧ COVER ✧✧✧✧✧✧✧✧✧-->
+    <section class="cover" id="cover">
+        <div class="cover-content">
+            <h2 class="cover-caption">Welcome to my personal portfolio!</h2>
+            <h1 class="cover-title">My space</h1>
+        </div>
+    </section>
 
 
-<script src="/JS/bg.js"></script>
+    <!--✧✧✧✧✧✧✧✧✧ ABOUT ME ✧✧✧✧✧✧✧✧✧-->
+    <section class="about" id="about">
+        <h2 class="about-title">About Me</h2>
+
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('about-me')">About Me</button>
+            <button class="tab-button" onclick="showTab('formation')">Formation</button>
+            <button class="tab-button" onclick="showTab('experience')">Experience</button>
+            <button class="tab-button" onclick="showTab('tools')">Tools</button>
+        </div>
+
+        <div class="tab-content active" id="about-me">
+            <h1>Hi, I'm Bruna.</h1>
+            <p>I'm a passionate front-end developer with a knack for creating visually stunning and user-friendly web
+                applications. With a strong foundation in HTML, CSS, and JavaScript, I specialize in crafting responsive
+                designs that adapt seamlessly across devices. My journey in web development is fueled by a love for
+                innovation and a commitment to delivering exceptional digital experiences.</p>
+            <p>Still in training, but already immersed in the world of digital creation. I'm exploring tools and
+                concepts to transform ideas into real and functional projects. In this portfolio, I share some of my
+                work and learnings so far - and this is just the beginning.</p>
+
+            <div class="star"></div>
+            <img src="" alt="Bruna Carvalho">
+        </div>
+
+
+        <div class="tab-content" id="formation">
+            <h1>Formation</h1>
+            <p>My educational background includes a strong foundation in computer science and web development
+                principles. I've completed courses in HTML, CSS, JavaScript, and responsive design, with a focus on
+                creating modern and accessible web applications.</p>
+        </div>
+
+        <div class="tab-content" id="experience">
+            <h1>Experience</h1>
+            <p>I've worked on various projects that have helped me refine my skills in front-end development. My
+                experience includes collaborating with teams to build user-friendly interfaces and implementing
+                responsive designs that work across all devices.</p>
+        </div>
+
+        <div class="tab-content" id="tools">
+            <h1>Tools</h1>
+            <p>I'm proficient in using tools such as Visual Studio Code, Git, and various frameworks like React. I also
+                have experience with design tools like Figma for creating wireframes and prototypes.</p>
+        </div>
+
+    </section>
+
+
+    <!--✧✧✧✧✧✧✧✧✧ PROJECTS ✧✧✧✧✧✧✧✧✧-->
+   <section class="projects" id="projects">
+        <div class="projects-box">
+            <h2 class="project-title">projects</h2>
+            <hr>
+            <br>
+
+            <!-- slider -->
+            <div class="slider">
+                <!-- list Items -->
+
+                <div class="list">
+                    <div class="item active">
+                        <div class="content">
+                            <h1 class="project-h1">name project</h1>
+                            <br>
+
+                            <p class="project-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui blanditiis accusamus
+                                voluptate facilis odit minima quo cumque ratione, est atque cum, rerum, quos odio
+                                quisquam cupiditate sequi ab magni.
+                            </p>
+                            <br>
+                            <h2 class="project-h2">Difficulty</h2>
+                            <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae voluptatum
+                                architecto autem, maxime officiis odit, delectus fugiat aperiam assumenda, nam ullam
+                                sint nobis expedita illum soluta voluptas iure. Iure.</p>
+                                <br>
+                            <h2 class="project-h2">Technologies Used</h2>
+                                <li>sdvfbgd</li>
+                                <li>sdvfbgd</li>
+                                <li>sdvfbgd</li>
+                                <div class="project-img">
+                                    <a href="#"><img src="" alt=""></a>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="content">
+                           <h1 class="project-h1">name project</h1>
+                            <p class="project-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui blanditiis accusamus
+                                voluptate facilis odit minima quo cumque ratione, est atque cum, rerum, quos odio
+                                quisquam cupiditate sequi ab magni.
+                            </p>
+                            <h2 class="project-h2">Difficulty</h2>
+                            <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae voluptatum
+                                architecto autem, maxime officiis odit, delectus fugiat aperiam assumenda, nam ullam
+                                sint nobis expedita illum soluta voluptas iure. Iure.</p>
+
+                            <h2 class="project-h2">Technologies Used</h2>
+                                <li>sdvfbgd</li>
+                                <li>sdvfbgd</li>
+                                <li>sdvfbgd</li>
+                                <div class="project-img">
+                                    <a href="#"><img src="" alt=""></a>
+                                </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="item">
+                        <div class="content">
+                            <h1 class="project-h1">name project</h1>
+                            <p class="project-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui blanditiis accusamus
+                                voluptate facilis odit minima quo cumque ratione, est atque cum, rerum, quos odio
+                                quisquam cupiditate sequi ab magni.
+                            </p>
+                            <h2 class="project-h2">Difficulty</h2>
+                            <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae voluptatum
+                                architecto autem, maxime officiis odit, delectus fugiat aperiam assumenda, nam ullam
+                                sint nobis expedita illum soluta voluptas iure. Iure.</p>
+
+                            <h2 class="project-h2">Technologies Used</h2>
+                                <li>sdvfbgd</li>
+                                <li>sdvfbgd</li>
+                                <li>sdvfbgd</li>
+                                <div class="project-img">
+                                    <a href="#"><img src="" alt=""></a>
+                                </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="item">
+                        <div class="content">
+                            <h1 class="project-h1">name project</h1>
+                            <p class="project-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui blanditiis accusamus
+                                voluptate facilis odit minima quo cumque ratione, est atque cum, rerum, quos odio
+                                quisquam cupiditate sequi ab magni.
+                            </p>
+                            <h2 class="project-h2">Difficulty</h2>
+                            <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae voluptatum
+                                architecto autem, maxime officiis odit, delectus fugiat aperiam assumenda, nam ullam
+                                sint nobis expedita illum soluta voluptas iure. Iure.</p>
+
+                            <h2 class="project-h2">Technologies Used</h2>
+                                <li>sdvfbgd</li>
+                                <li>sdvfbgd</li>
+                                <li>sdvfbgd</li>
+                                <div class="project-img">
+                                    <a href="#"><img src="" alt=""></a>
+                                </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="content">
+                           <h1 class="project-h1">name project</h1>
+                            <p class="project-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem qui blanditiis accusamus
+                                voluptate facilis odit minima quo cumque ratione, est atque cum, rerum, quos odio
+                                quisquam cupiditate sequi ab magni.
+                            </p>
+                            <h2 class="project-h2">Difficulty</h2>
+                            <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad recusandae voluptatum
+                                architecto autem, maxime officiis odit, delectus fugiat aperiam assumenda, nam ullam
+                                sint nobis expedita illum soluta voluptas iure. Iure.</p>
+
+                            <h2 class="project-h2">Technologies Used</h2>
+                                <li>sdvfbgd</li>
+                                <li>sdvfbgd</li>
+                                <li>sdvfbgd</li>
+                                <div class="project-img">
+                                    <a href="#"><img src="" alt=""></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- button arrows -->
+                <div class="arrows">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div>
+
+                <!-- thumbnail -->
+                <div class="thumbnail">
+                    <div class="item active">
+                        <div class="content">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="content">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="content">
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="content">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!--✧✧✧✧✧✧✧✧✧ CONTACT ✧✧✧✧✧✧✧✧✧-->
+    <section class="contact" id="contact">
+        <h2 class="contact-title">Contacts</h2>
+          <div class="contact-info">
+            <div class="contact-card">
+                <p><a href="https://mail.google.com/mail/?view=cm&to=bruna.martinscarvalho2004@gmail.com&su"
+                        target="_blank">bruna.martinscarvalho2004@gmail.com</a></p>
+            </div>
+            <div class="contact-card">
+                <p><a href="https://github.com/BrunaMart" target="_blank">BrunaMart</a></p>
+            </div>
+            <div class="contact-card">
+                <p><a href="https://www.linkedin.com/in/bruna-martins-6827362b1/" target="_blank">Bruna Martins</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Bruna Martins. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/app.js"></script>
 </body>
+
 </html>
